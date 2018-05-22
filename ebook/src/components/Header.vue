@@ -4,7 +4,7 @@
       <!-- <div class="back iconfont">&#xe6e9;</div> -->
       <div class="logo">EbooKing</div>
       <div class="show">
-        <div class="toggle"></div>
+        <div class="toggle iconfont">&#xe790;</div>
       </div>
     </div>
   </div>

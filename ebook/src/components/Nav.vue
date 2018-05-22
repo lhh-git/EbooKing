@@ -53,9 +53,7 @@
       }
     },
     methods: {
-      navActives(data){
-        this.navActive=data
-      }
+       
     }
   }
 </script>

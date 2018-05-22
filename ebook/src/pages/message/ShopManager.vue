@@ -4,10 +4,27 @@
 	  		<input type="submit" name="" class="sub" value="编辑">
 	  		<div class="content">
 	  			<ul>
-		  			<li v-for="item in list">
-		  				<span>{{item.title}}</span>
+		  			<li>
+		  				<span>姓名：</span>
 		  				<input type="text" name="" value="">
 		  			</li>
+		  			<li>
+		  				<span>性别：</span>
+		  				<input type="text" name="" value="">
+		  			</li>
+		  			<li>
+		  				<span>电话：</span>
+		  				<input type="text" name="" value="">
+		  			</li>
+		  			<li>
+		  				<span>籍贯：</span>
+		  				<input type="text" name="" value="">
+		  			</li>
+		  			<li>
+		  				<span>图片：</span>
+		  				
+		  			</li>
+
 	  			</ul>
 	  		</div>
 	  	</div>
@@ -15,32 +32,17 @@
 </template>
 
 <script>
-	 
 	export default {
-		name: 'message-detail',
+		name: 'message-shopManager',
 		data() {
 			return {
-				chineseName: null,
-				englishName: null,
-				list: [
-					{
-						'title': '所属集团品牌：'
-					}, {
-						'title': '星级：：'
-					}, {
-						'title': '开业年月：'
-					}, {
-						'title': '最近装修年月：'
-					}, {
-						'title': '客房总数：'
-					}, {
-						'title': '前台电话：'
-					}, {
-						'title': '传真：'
-					}, {
-						'title': '发票类型：'
-					},
-				]
+
+
+			}	 
+		},
+		methods: {
+			handleRedact() {
+				alert()
 			}
 		}
 	}
@@ -69,18 +71,21 @@
 		margin-bottom: .05rem
 	.content
 		font-size: .16rem
+		margin-top: .2rem
 		ul
 			li
 				margin-bottom: .3rem
 				line-height: .3rem
 				span
-					float: left
 					display: block
+					float: left
 					width: 1.2rem
 					text-align: right
 					margin-right: .25rem
 				input
 					display: inline-block
+					
+					
 					
 		
 	

@@ -26,6 +26,9 @@
 	import Basics from './Basics'
 	import Detail from './Detail'
 	import Facilities from './Facilities'
+	import Image from './Image'
+	import Stipulation from './Stipulation'
+	import ShopManager from './ShopManager'
 	export default {
 		name: 'message',
 		components: {
@@ -33,7 +36,10 @@
 		  	NavPublic,
 		  	Basics,
 		  	Detail,
-		  	Facilities
+		  	Facilities,
+		  	Image,
+		  	Stipulation,
+		  	ShopManager
 
 		},
 
@@ -48,19 +54,19 @@
 						'murl': '/Detail'
 					}, {
 						'title': '酒店设施',
-						'murl': 'Facilities'
+						'murl': '/Facilities'
 					}, {
 						'title': '酒店图片',
-						'murl': ''
+						'murl': '/Image'
 					}, {
 						'title': '房型信息',
 						'murl': ''
 					}, {
 						'title': '酒店政策',
-						'murl': ''
+						'murl': '/Stipulation'
 					}, {
 						'title': '店长信息',
-						'murl': ''
+						'murl': '/ShopManager'
 					}
 				]
 			}

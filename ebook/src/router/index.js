@@ -12,6 +12,9 @@ import FrontDesk from '@/pages/frontDesk/frontDesk'
 import Basics from '../pages/message/Basics'
 import Detail from '../pages/message/Detail'
 import Facilities from '../pages/message/Facilities' 
+import Image from '../pages/message/Image'
+import Stipulation from '../pages/message/Stipulation'
+import ShopManager from '../pages/message/ShopManager'
 
 
 
@@ -41,8 +44,11 @@ export default new Router({
       component: Message,
       children: [
         { path: '/basics', component: Basics },
-        { path: '/detail', component: Detail},
-        { path: '/facilities', component: Facilities}
+        { path: '/detail', component: Detail },
+        { path: '/facilities', component: Facilities },
+        { path: '/image', component: Image },
+        { path: '/stipulation', component: Stipulation },
+        { path: '/shopManager', component: ShopManager}
       ],
       redirect: '/basics'
     }, {

@@ -4,7 +4,7 @@ import router from './router'
 import '../static/css/reset.css'
 import '../static/css/iconfont/iconfont.css'
 import '../static/css/adapt.css'
-import store from '@/store'
+import store from '@/store/store'
 
 
 

@@ -1,7 +1,7 @@
 <template>
 	<div>
 	  	<div class="main">
-	  		<input type="submit" name="" class="sub" value="编辑" @click="this.handleRedact">
+	  		<input type="submit" name="" class="sub" value="编辑">
 	  		<div class="content">
 	  			<ul>
 		  			<li v-for="item in list">
