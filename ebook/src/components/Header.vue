@@ -36,6 +36,11 @@
       .toggle
         width: 5%
         height: 100%
+        text-align: center
+        line-height: .7rem
         border-right: 1px solid #2480c6
+        font-size: .3rem
+        color: #fff
+        
       
 </style>

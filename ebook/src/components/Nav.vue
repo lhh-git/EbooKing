@@ -61,7 +61,7 @@
   .navs
     float: left
     width: 16%
-    height: 8.7rem
+    height: 9.9rem
     background: #283745
     .list
       padding-top: 0.6rem

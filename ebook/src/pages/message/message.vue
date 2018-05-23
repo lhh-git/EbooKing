@@ -29,6 +29,8 @@
 	import Image from './Image'
 	import Stipulation from './Stipulation'
 	import ShopManager from './ShopManager'
+	import HouseMessage from './HouseMessage'
+
 	export default {
 		name: 'message',
 		components: {
@@ -39,8 +41,8 @@
 		  	Facilities,
 		  	Image,
 		  	Stipulation,
-		  	ShopManager
-
+		  	ShopManager,
+		  	HouseMessage
 		},
 
 		data() {
@@ -60,7 +62,7 @@
 						'murl': '/Image'
 					}, {
 						'title': '房型信息',
-						'murl': ''
+						'murl': '/HouseMessage'
 					}, {
 						'title': '酒店政策',
 						'murl': '/Stipulation'

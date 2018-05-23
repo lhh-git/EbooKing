@@ -15,8 +15,10 @@ import Facilities from '../pages/message/Facilities'
 import Image from '../pages/message/Image'
 import Stipulation from '../pages/message/Stipulation'
 import ShopManager from '../pages/message/ShopManager'
+import HouseMessage from '../pages/message/HouseMessage'
 
-
+//----------信息维护下的房型信息
+import HouseMessageDetail from '../pages/message/HouseMessageDetail'
 
 Vue.use(Router)
 
@@ -48,7 +50,10 @@ export default new Router({
         { path: '/facilities', component: Facilities },
         { path: '/image', component: Image },
         { path: '/stipulation', component: Stipulation },
-        { path: '/shopManager', component: ShopManager}
+        { path: '/shopManager', component: ShopManager },
+        { path: '/houseMessage', component: HouseMessage },
+        { path: '/houseMessageDetail', component: HouseMessageDetail}  
+        
       ],
       redirect: '/basics'
     }, {

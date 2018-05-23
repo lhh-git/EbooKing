@@ -10,7 +10,10 @@
 		  			</li>
 		  			<li>
 		  				<span>性别：</span>
-		  				<input type="text" name="" value="">
+		  				<select>
+						   <option value ="volvo">男</option>
+						   <option value ="saab">女</option>
+						</select>
 		  			</li>
 		  			<li>
 		  				<span>电话：</span>
@@ -53,7 +56,7 @@
 <style lang="stylus" scoped>
 	.main
 		overflow: hidden
-		height: 7.4rem
+		height: 8.7rem
 		margin-left: .1rem
 		margin-right: .1rem
 		padding-left: .2rem
@@ -84,6 +87,9 @@
 					margin-right: .25rem
 				input
 					display: inline-block
+				select
+					width: 2.06rem
+					height: .3rem
 					
 					
 					

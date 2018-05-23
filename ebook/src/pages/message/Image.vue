@@ -1,11 +1,11 @@
 <template>
 	<div>
 	  	<div class="main">
-	  		<input type="submit" name="" class="sub" value="编辑">
 	  		<div class="content">
-
-	  			 
-
+	  			<div class="detail" v-for="item in list">
+	  				<p class="detail-title">{{item.title}}</p>
+	  				<img class="detail-img" :src="item.url">
+	  			</div>
 	  		</div>
 	  	</div>
 	</div>
@@ -17,7 +17,18 @@
 		name: 'message-detail',
 		data() {
 			return {
-		 
+		 		list: [
+		 			{
+		 				'title': '首页',
+            			'url': '../../../static/img/u56.png'
+		 			}, {
+		 				'title': '大堂',
+		 				'url': '../../../static/img/u56.png'
+		 			}, {
+		 				'title': '客房',
+		 				'url': '../../../static/img/u56.png'
+		 			}
+		 		]
 			}
 		}
 	}
@@ -28,25 +39,25 @@
 <style lang="stylus" scoped>
 	.main
 		overflow: hidden
-		height: 7.4rem
+		height: 8.7rem
 		margin-left: .1rem
 		margin-right: .1rem
 		padding-left: .2rem
-		padding-top: .2rem
+		
 		background: #fff
-	.sub
-		width: .68rem
-		height: .34rem
-		background: #57b99d
-		border: none
-		font-size: .18rem
-		color: #fff
-		font-weight: bold
-		border-radius: .03rem
-		margin-bottom: .05rem
 	.content
 		font-size: .16rem
-		 
-		
+		.detail
+			margin-right: .2rem
+			margin-top: .3rem
+			.detail-title
+				font-size: .18rem
+				padding-bottom:.14rem
+				border-bottom: .01rem solid #333 
+			.detail-img
+				margin-top: .14rem
+				width: 2rem
+				height: 2rem
+				
 	
 </style>

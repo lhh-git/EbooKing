@@ -44,7 +44,7 @@
 <script>
 	 
 	export default {
-		name: 'message-detail',
+		name: 'message-stipulation',
 		data() {
 			return {
 		 		 
@@ -58,7 +58,7 @@
 <style lang="stylus" scoped>
 	.main
 		overflow: hidden
-		height: 7.4rem
+		height: 8.7rem
 		margin-left: .1rem
 		margin-right: .1rem
 		padding-left: .2rem
