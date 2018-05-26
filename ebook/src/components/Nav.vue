@@ -75,6 +75,8 @@
         height: .4rem
         font-size: .18rem
         color: #fff
+        a
+          display: block
         i
           margin-left: 22.6%
           color: #fff

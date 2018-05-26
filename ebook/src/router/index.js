@@ -7,6 +7,7 @@ import RoomPrice from '@/pages/roomPrice/roomPrice'
 import Message from '@/pages/message/message'
 import Schedule from '@/pages/schedule/schedule'
 import FrontDesk from '@/pages/frontDesk/frontDesk'
+import city from '../components/city'
 
 // ----------信息维护
 import Basics from '../pages/message/Basics'

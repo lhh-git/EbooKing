@@ -101,9 +101,11 @@
 				background: #d7dee5
 				border-radius: .04rem .04rem 0 0
 				font-size: .18rem
-				color: #6c8497
 				margin-right: .2rem
 				cursor: pointer
+			a
+				display: block
+				color: #6c8497
 		.sub
 			margin-top: .2rem
 			width: .68rem

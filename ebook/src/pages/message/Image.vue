@@ -4,7 +4,10 @@
 	  		<div class="content">
 	  			<div class="detail" v-for="item in list">
 	  				<p class="detail-title">{{item.title}}</p>
-	  				<img class="detail-img" :src="item.url">
+	  				<div class="detail-img">
+		  				<img :src="item.url">
+		  				<input class="upload" type="file"/>  
+		  			</div>
 	  			</div>
 	  		</div>
 	  	</div>
@@ -31,6 +34,7 @@
 		 		]
 			}
 		}
+
 	}
  
 	 
@@ -55,9 +59,24 @@
 				padding-bottom:.14rem
 				border-bottom: .01rem solid #333 
 			.detail-img
+				position: relative
 				margin-top: .14rem
 				width: 2rem
 				height: 2rem
+				img
+					width: 2rem
+					height: 2rem	
+				.upload
+					position: absolute
+					top: 0
+					left: 0
+					width: 2rem
+					height: 2rem
+					opacity: 0; filter:Alpha(opacity=0)
+					cursor: pointer
+					
+					
+
 				
 	
 </style>

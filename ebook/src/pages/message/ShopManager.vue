@@ -1,31 +1,31 @@
 <template>
 	<div>
 	  	<div class="main">
-	  		<input type="submit" name="" class="sub" value="编辑">
+	  		<input type="submit" name="" class="sub" value="编辑" @click="handleSubmit">
 	  		<div class="content">
 	  			<ul>
 		  			<li>
 		  				<span>姓名：</span>
-		  				<input type="text" name="" value="">
+		  				<input type="text" name="" v-model="name" v-on:blur="handleBlurname(name)">
 		  			</li>
 		  			<li>
 		  				<span>性别：</span>
-		  				<select>
-						   <option value ="volvo">男</option>
-						   <option value ="saab">女</option>
+		  				<select v-model="sex" @change="handleChangeSex(sex)">
+						   <option>男</option>
+						   <option>女</option>
 						</select>
 		  			</li>
 		  			<li>
 		  				<span>电话：</span>
-		  				<input type="text" name="" value="">
+		  				<input type="text" name="" v-model="phone" v-on:blur="handleBlurPhone(phone)">
 		  			</li>
 		  			<li>
 		  				<span>籍贯：</span>
-		  				<input type="text" name="" value="">
+		  				<input type="text" name="" v-model="nativePlace">
 		  			</li>
 		  			<li>
 		  				<span>图片：</span>
-		  				
+		  				<input type="file" name="">
 		  			</li>
 
 	  			</ul>
@@ -39,13 +39,45 @@
 		name: 'message-shopManager',
 		data() {
 			return {
-
+				name: null,
+				sex: null,
+				phone: null,
+				nativePlace: null
 
 			}	 
 		},
 		methods: {
-			handleRedact() {
-				alert()
+			handleBlurname (name) {
+				if( name == null) {
+					alert("店长名字不能为空")
+				}
+				
+			},
+			handleChangeSex () {
+
+			},
+			handleBlurPhone (phone) {
+				if( phone == null ) {
+					alert("店长手机号不能为空")
+				}
+			},
+			handleSubmit () {
+				const dataList = {
+					"name" : this.name,
+					"sex" : this.sex,
+					"phone" : this.phone,
+					"nativePlace" : this.nativePlace,
+				}
+				console.log(dataList)
+				if( this.name == !null) {
+					if( this.phone == !null ) {
+						
+					}else {
+						alert("店长手机号不能为空")
+					}
+				}else {
+					alert("店长名字不能为空")
+				}
 			}
 		}
 	}
@@ -87,6 +119,7 @@
 					margin-right: .25rem
 				input
 					display: inline-block
+					width: 2.06rem
 				select
 					width: 2.06rem
 					height: .3rem

@@ -1,9 +1,14 @@
 {
 	"ret": true,
 	"data": {
-		"swiperList": [{
-			"id": "1001",
-			"title": "1"
-		}]
+		"swiperList": [
+			{
+				"id": "1001",
+				"title": "菜单"
+			}, {
+				"id": "1002",
+				"title": "回血"
+			}
+		]
 	}
 }
